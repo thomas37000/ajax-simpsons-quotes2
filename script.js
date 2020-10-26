@@ -17,3 +17,9 @@ function fetchSimpsonJSON() {
 }
 
 fetchSimpsonJSON();
+
+document.getElementById("btn").addEventListener("click", newQuote); 
+
+function newQuote() {  
+  document.getElementById("simpson").innerHTML = fetchSimpsonJSON();
+}
